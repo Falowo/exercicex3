@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+@font-face {
+	font-family: "Gruvilicious";
+	src: url("fonts/Gruvilicious.ttf") format("truetype");
+}
+
+body {
+	font-family: "Gruvilicious", sans-serif;
+	font-size: 2rem;
+}
+
+.content {
+	/* margin: 5rem; */
+    max-width: 90%;
+    margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 5rem;
+}
+
+img {
+	/* object-fit: cover; */
+	width: 100%;
+}
+@media (max-width: 568px) {
+	.content {
+		display: flex;
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+	}
+    .text{
+        padding-top: 2rem;
+        width: 100%;
+    }
+    img{
+        width: 80vw;
+    }
+    h1, h2{
+        margin: 2rem 0;
+    }
+}
+
+p {
+	color: blue;
+}
+
+a {
+    
+	font-weight: bold;
+	text-decoration: none;
+	color: green;
+	cursor: pointer;
+}
+
+a:hover {
+	color: hotpink;
+}
+
